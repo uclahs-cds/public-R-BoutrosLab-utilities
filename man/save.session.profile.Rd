@@ -6,14 +6,14 @@
 save.session.profile(filename, stdout=FALSE);
 }
 \arguments{
-  \item{filename}{Name of the file to write session profile information to.  If stdout = TRUE, the session profile information is also printed to the screen.}
-  \item{stdout}{Print session profile information to screen.  Default is FALSE.}
+    \item{filename}{Name of the file to write session profile information to.  If stdout = TRUE, the session profile information is also printed to the screen.}
+    \item{stdout}{Print session profile information to screen.  Default is FALSE.}
 }
 \details{Session profile includes memory used from gc(), process time elapsed from proc.time(), the output of ls() in the global environment, and the session info from sessionInfo()}
 \value{No return value, just writes output to file (and possibly screen).}
 \author{Denise Mak}
 \examples{
 x <- rnorm(1e8);
-save.session.profile( generate.filename('Test', 'Session.Profile', 'txt') );
+save.session.profile(generate.filename('Test', 'Session.Profile', 'txt'));
 }
 \keyword{utilities}

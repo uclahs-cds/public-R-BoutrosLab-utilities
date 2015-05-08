@@ -14,13 +14,13 @@ ragged.rbind <- function(...) {
 	xxx <- list(...)
 	n <- max(unlist(lapply(xxx,function(x){ifelse(is.matrix(x),nrow(x),length(x))})))
 	yyy <- lapply(xxx,
-	function(x,n){
-		if(is.matrix(x)) rbind(x,matrix(NA,ncol=ncol(x),nrow=n))
-		else c(x,rep(NA,n-length(x)))
-		},
-		n=n
-		)
+		function(x,n){
+			if(is.matrix(x)) rbind(x,matrix(NA,ncol=ncol(x),nrow=n))
+			else c(x,rep(NA,n-length(x)))
+			},
+		n = n
+		);
 
-	do.call("cbind",yyy) 
+	do.call("cbind", yyy); 
 	}
 

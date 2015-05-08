@@ -1,26 +1,15 @@
 \name{convert.magic}
 \alias{convert.magic}
-\title{
-Converts columns in a dataframe to specified type.
-}
-\description{
-Takes a dataframe, converts specified columns to specified type. See examples for regular use.
-}
-\usage{
-convert.magic(obj, type)
-}
+\title{Converts columns in a dataframe to specified type.}
+\description{Takes a dataframe, converts specified columns to specified type. See examples for regular use.}
+\usage{convert.magic(obj, type)}
 \arguments{
-  \item{obj}{A dataframe}
-  \item{type}{Type to convert to, 'factor', 'numeric' or 'character'}
+    \item{obj}{A dataframe}
+    \item{type}{Type to convert to, 'factor', 'numeric' or 'character'}
 }
-\details{
-}
-\value{
-The dataframe but coerced to specified type.
-}
-\author{
-Nicholas Harding
-}
+\details{}
+\value{The dataframe but coerced to specified type.}
+\author{Nicholas Harding}
 
 \examples{
 df <- data.frame(x = 1:10,
@@ -30,12 +19,12 @@ df <- data.frame(x = 1:10,
 	j = c(rep(c("a", "b", "c"), 3), "d")
 	);
 
-str(df)
-str(convert.magic(df, "character"))
-str(convert.magic(df, "factor"))
+str(df);
+str(convert.magic(df, "character"));
+str(convert.magic(df, "factor"));
 
 # or use specific columns only!
-df[, c("x", "y")] <- convert.magic(df[, c("x", "y")], "factor")
+df[, c("x", "y")] <- convert.magic(df[, c("x", "y")], "factor");
 }
 \keyword{ type }
 \keyword{ factor }

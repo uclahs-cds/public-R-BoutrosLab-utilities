@@ -10,18 +10,13 @@ Check for duplicated values.  Logical is returned for all replicates.
 is.duplicated(x)
 }
 \arguments{
-  \item{x}{A vector}
+    \item{x}{A vector}
 }
-\details{
-}
+\details{}
 \value{
 A logical for all replicates, including the first value.
 }
-\author{
-Daryl Waggott
-}
+\author{Daryl Waggott}
 
-\examples{
-
-}
+\examples{}
 \keyword{ duplicate }

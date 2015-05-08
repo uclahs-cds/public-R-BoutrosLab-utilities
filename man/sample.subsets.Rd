@@ -6,9 +6,9 @@
 sample.subsets(x, size, n);
 }
 \arguments{
-  \item{x}{The vector to sample subsets from}
-  \item{size}{The size of each subset}
-  \item{n}{The number of subsets to sample}
+    \item{x}{The vector to sample subsets from}
+    \item{size}{The size of each subset}
+    \item{n}{The number of subsets to sample}
 }
 \details{}
 \value{A list of length n consisting of elements of length size}

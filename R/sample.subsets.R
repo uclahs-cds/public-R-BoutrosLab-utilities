@@ -11,20 +11,20 @@
 
 sample.subsets <- function(x, size, n) {
 
-	# create an empty output object and populate it with random combinations
-        combinations <- vector('list', n);
-        for (i in 1:n) combinations[[i]] <- sort(sample(x, size));
+    # create an empty output object and populate it with random combinations
+    combinations <- vector('list', n);
+    for (i in 1:n) {combinations[[i]] <- sort(sample(x, size));};
+    combinations <- unique(combinations);
+
+    # replace repeated combinations until we have the desired number of unique combinations
+    while (length(combinations) < n) {
+        shortfall <- n - length(combinations);
+        combinations <- c(combinations, vector('list', shortfall));
+        for (i in n:(n - shortfall + 1)) combinations[[i]] <- sort(sample(x, size));
         combinations <- unique(combinations);
-
-	# replace repeated combinations until we have the desired number of unique combinations
-        while (length(combinations) < n) {
-                shortfall <- n - length(combinations);
-                combinations <- c(combinations, vector('list', shortfall));
-                for (i in n:(n - shortfall + 1)) combinations[[i]] <- sort(sample(x, size));
-                combinations <- unique(combinations);
-                }
-
-        return(combinations);
-
         }
+
+    return(combinations);
+
+    }
 

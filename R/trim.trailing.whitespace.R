@@ -10,6 +10,8 @@
 # credit be given to OICR scientists, as scientifically appropriate.
 
 trim.trailing.whitespace <- function(x) {
-	if (!is.character(x)) { return(NA); }
+	if (!is.character(x)) { 
+		return(NA); 
+		}
 	sub("\\s+$", "", x);
 	}

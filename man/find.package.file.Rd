@@ -6,8 +6,8 @@
 find.package.file(package, file);
 }
 \arguments{
-  \item{package}{A string containing the package name to check}
-  \item{file}{A string containing the name of the file}
+    \item{package}{A string containing the package name to check}
+    \item{file}{A string containing the name of the file}
 }
 \details{This will only return one file path under most circumstances, unless you have multiple copies of the package in your .libPaths()}
 \value{Returns a vector of paths to files installed with the package.}

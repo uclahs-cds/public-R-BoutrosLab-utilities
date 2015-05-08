@@ -6,15 +6,15 @@
 get.most.recent.dir(dir.path, max.days=100);
 }
 \arguments{
-  \item{dir.path}{Name of the dir/file. Should contain the string 'DATE'}
-  \item{max.days}{Maximum days back to test.}
+    \item{dir.path}{Name of the dir/file. Should contain the string 'DATE'}
+    \item{max.days}{Maximum days back to test.}
 }
 \details{}
 \value{A valid filepath}
 \author{Nicholas Harding}
 \examples{
 # create a file with date 10 days old and find that file.
-name <- paste(as.Date(as.double(Sys.Date()) - 10, origin="1970-01-01"),'_FILE',sep='')
+name <- paste(as.Date(as.double(Sys.Date()) - 10, origin = "1970-01-01"), '_FILE', sep='');
 print(name);
 file.create(name);
 file.name <- get.most.recent.dir('DATE_FILE');

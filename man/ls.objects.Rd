@@ -6,10 +6,10 @@
 ls.objects(pos = 1, order.by, decreasing = TRUE, n = 10) 
 }
 \arguments{
-  \item{pos}{Alternative way to specify environment, should not need to change. See ls.}
-  \item{order.by}{Order objects by name (default); other options: Type, Size, PrettySize, Rows or Columns.}
-  \item{decreasing}{Order objects in decreasing order (default).}
-  \item{n}{The number of objects to print; 10 is default.}
+    \item{pos}{Alternative way to specify environment, should not need to change. See ls.}
+    \item{order.by}{Order objects by name (default); other options: Type, Size, PrettySize, Rows or Columns.}
+    \item{decreasing}{Order objects in decreasing order (default).}
+    \item{n}{The number of objects to print; 10 is default.}
 }
 \details{Returns a detailed list of objects in R session.}
 \value{Returns the names, type, size, number of rows and columns of the objects in the R session.}

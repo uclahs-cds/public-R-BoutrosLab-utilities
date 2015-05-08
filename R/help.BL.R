@@ -57,7 +57,14 @@ help.BL <- function(pattern, packages = NULL, search.code = FALSE) {
 	if (length(packages) == 0) stop("No specified packages are installed");
 
 	# search documentation
-	help.results <- help.search(pattern = pattern, apropos = pattern, fields =  c("name", "title", "alias", "concept",  "keyword"), verbose = FALSE, types = c("help", "vignette"), package = packages);
+	help.results <- help.search(
+		pattern = pattern, 
+		apropos = pattern, 
+		fields =  c("name", "title", "alias", "concept",  "keyword"), 
+		verbose = FALSE, 
+		types = c("help", "vignette"), 
+		package = packages
+		);
 
 	help.results <- help.results$match;
 

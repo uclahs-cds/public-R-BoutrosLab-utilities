@@ -10,7 +10,7 @@
 # credit be given to OICR scientists, as scientifically appropriate.
 
 mixed.index <- function(x, index) {
-	index <- 1:length(x) %in% c(index[index>0], (length(x)+1-abs(index[index<0])));
+	index <- 1:length(x) %in% c(index[index > 0], (length(x) + 1 - abs(index[index < 0])));
 	return(x[index]);
 	}
 

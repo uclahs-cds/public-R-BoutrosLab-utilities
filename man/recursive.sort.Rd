@@ -7,15 +7,15 @@ recursive.sort(x, by="col",na.last=TRUE, decreasing=FALSE, skip=NULL, reverse = 
 }
 
 \arguments{
-  \item{x}{data.frame to sort}
-  \item{by}{Sort by (col)umns  or row(s).  Defaults to columns.}
-  \item{na.last}{see order}
-  \item{decreasing}{reverse sort order}
-  \item{skip}{row or column names to skip when creating the sort order}
-  \item{reverse}{Should the sort order priority start from last row or column}
-  \item{group}{a group vector or matrix which allows for nested ordering}
-  \item{alternate.dim.order.func}{a function to be used for sort i.e. mean, sum}
-  \item{alternate.dim.order.func.rev}{sort the alternate dimension in descending order using the results of the specified function}
+    \item{x}{data.frame to sort}
+    \item{by}{Sort by (col)umns  or row(s).  Defaults to columns.}
+    \item{na.last}{see order}
+    \item{decreasing}{reverse sort order}
+    \item{skip}{row or column names to skip when creating the sort order}
+    \item{reverse}{Should the sort order priority start from last row or column}
+    \item{group}{a group vector or matrix which allows for nested ordering}
+    \item{alternate.dim.order.func}{a function to be used for sort i.e. mean, sum}
+    \item{alternate.dim.order.func.rev}{sort the alternate dimension in descending order using the results of the specified function}
 }
 \details{}
 \value{sorted data.frame}

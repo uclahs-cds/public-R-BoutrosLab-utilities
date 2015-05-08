@@ -10,17 +10,11 @@ Row wise concatenation of objects with different lengths.
 ragged.rbind(...)
 }
 \arguments{
-  \item{\dots}{
+    \item{\dots}{
 }
 }
-\details{
-}
-\value{
-}
-\author{
-Daryl Waggott
-}
-\examples{
-
-}
+\details{}
+\value{}
+\author{Daryl Waggott}
+\examples{}
 \keyword{rbind}

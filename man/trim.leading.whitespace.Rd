@@ -6,7 +6,7 @@
 trim.leading.whitespace(x);
 }
 \arguments{
-  \item{x}{String to be stripped}
+    \item{x}{String to be stripped}
 }
 \details{This is a very simple wrapper function, and should *not* be extended!}
 \value{Returns the string after leading-whitespace has been removed, or NA if passed a non-character}

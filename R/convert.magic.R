@@ -9,13 +9,13 @@
 # If publications result from research using this SOFTWARE, we ask that the Ontario Institute for Cancer Research be acknowledged and/or
 # credit be given to OICR scientists, as scientifically appropriate.
 
-convert.magic <- function(obj, type){
+convert.magic <- function(obj, type) {
 	FUN1 <- switch(type,
 		character = as.character,
 		numeric = as.numeric,
 		factor = as.factor
-		)
-	out <- lapply(obj, FUN1)
-	as.data.frame(out)
+		);
+	out <- lapply(obj, FUN1);
+	as.data.frame(out);
 	}
 

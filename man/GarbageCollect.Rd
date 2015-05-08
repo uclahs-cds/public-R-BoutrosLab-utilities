@@ -6,7 +6,7 @@
 GarbageCollect(x);
 }
 \arguments{
-  \item{x}{Number of iterations of gc() to run, defaults to nine}
+    \item{x}{Number of iterations of gc() to run, defaults to nine}
 }
 \details{}
 \value{No return value}

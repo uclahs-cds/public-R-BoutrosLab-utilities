@@ -10,16 +10,19 @@
 # credit be given to OICR scientists, as scientifically appropriate.
 
 # function takes a string containing DATE. DATE is substituted in for current date
-get.most.recent.dir <- function(dir.path,max.days=100){
+get.most.recent.dir <- function(dir.path,max.days=100) {
 	date.counter <- 1;
 	e.date <- Sys.Date();
 	working.dir <- gsub('DATE',e.date,dir.path);
 
-	while(!file.exists(working.dir)){
+	while(!file.exists(working.dir)) {
 		e.date <- as.Date(as.double(Sys.Date()) - date.counter, origin="1970-01-01");
 		working.dir <- gsub('DATE', e.date, dir.path);
 		date.counter <- date.counter + 1;
-		if(date.counter > max.days) { warning('No directory found, looked back over specified limit! (default 100 days)'); return(NULL); };
+		if(date.counter > max.days) { 
+			warning('No directory found, looked back over specified limit! (default 100 days)'); 
+			return(NULL); 
+			};
 		}
 	return( working.dir );
 	}

@@ -11,24 +11,26 @@
 
 string.capitalize <- function(input.string, all.words = FALSE) {
 
-	# split the input string into its component words
-        output.string <- strsplit(input.string, ' ')[[1]];
+    # split the input string into its component words
+    output.string <- strsplit(input.string, ' ')[[1]];
 
-	# capitalize just the first word or all the words as needed
-        if (FALSE == all.words) {
-                output.string <- paste(
-                                        paste(toupper(substring(output.string[1], 1, 1)), substring(output.string[1], 2), sep = ''),
-                                        paste(output.string[-1], collapse = ' '),
-                                        sep = ' '
-                                        );
-                }
-        else {
-                output.string <- paste(
-					toupper(substring(output.string, 1, 1)), substring(output.string, 2),
-					collapse = ' ', sep = ''
-					);
-                }
-
-        return(output.string);
+    # capitalize just the first word or all the words as needed
+    if (FALSE == all.words) {
+        output.string <- paste(
+            paste(toupper(substring(output.string[1], 1, 1)), substring(output.string[1], 2), sep = ''),
+            paste(output.string[-1], collapse = ' '),
+            sep = ' '
+            );
         }
+    else {
+        output.string <- paste(
+            toupper(substring(output.string, 1, 1)), 
+            substring(output.string, 2),
+            collapse = ' ', 
+            sep = ''
+            );
+        }
+
+    return(output.string);
+    }
 

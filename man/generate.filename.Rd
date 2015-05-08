@@ -6,10 +6,10 @@
 generate.filename(project.stem, file.core, extension, file.date = Sys.Date());
 }
 \arguments{
-  \item{project.stem}{Name of the project}
-  \item{file.core}{Main part of the filename}
-  \item{extension}{What type of file is this}
-  \item{file.date}{What is the current date (defaults to today; FALSE turns off the date-stamp)}
+    \item{project.stem}{Name of the project}
+    \item{file.core}{Main part of the filename}
+    \item{extension}{What type of file is this}
+    \item{file.date}{What is the current date (defaults to today; FALSE turns off the date-stamp)}
 }
 \details{}
 \value{No return value}

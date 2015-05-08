@@ -6,14 +6,13 @@
 qw(x, split = NULL);
 }
 \arguments{
-  \item{x}{String to split}
-  \item{split}{Delimeter, tries to guess}
+    \item{x}{String to split}
+    \item{split}{Delimeter, tries to guess}
 }
 \details{}
 \value{Vector of strings}
 \author{Nicholas J. Harding}
 \examples{
-
 # define string
 my.string <- 'green red blue yellow orange';
 
@@ -22,7 +21,5 @@ qw('green red blue yellow orange');
 
 # use on an existing object
 qw(my.string);
-
-
 }
 \keyword{utilities}

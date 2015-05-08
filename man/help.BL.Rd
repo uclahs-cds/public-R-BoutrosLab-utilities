@@ -1,33 +1,18 @@
 \name{help.BL}
 \alias{help.BL}
-\title{
-Documentation and Code search
-}
-\description{
-Search documentation and code of list of packages.
-}
-\usage{
-help.BL(pattern, packages = NULL, search.code = FALSE)
-}
+\title{Documentation and Code search}
+\description{Search documentation and code of list of packages.}
+\usage{help.BL(pattern, packages = NULL, search.code = FALSE)}
 \arguments{
-  \item{pattern}{
+    \item{pattern}{The pattern to search for}
+    \item{packages}{The packages to search through}
+    \item{search.code}{Whether the code should be searched}
 }
-  \item{packages}{
-}
-  \item{search.code}{
-}
-}
-\details{
-}
-\value{
-documentation and code search as a two item list of matrices. 
-
-}
-\author{
-Daryl Waggott
-}
+\details{}
+\value{documentation and code search as a two item list of matrices. }
+\author{Daryl Waggott}
 \examples{
-help.BL("affy")
+    help.BL("affy");
 }
 \keyword{help}
 \keyword{search}

@@ -9,7 +9,11 @@
 # If publications result from research using this SOFTWARE, we ask that the Ontario Institute for Cancer Research be acknowledged and/or
 # credit be given to OICR scientists, as scientifically appropriate.
 
-GarbageCollect <- function(x = 9) { for (i in 1:x) { y <- gc(); } }
+GarbageCollect <- function(x = 9) { 
+	for (i in 1:x) { 
+		y <- gc(); 
+		} 
+	}
 
 
 

@@ -12,7 +12,7 @@
 strsplit.to.matrix <- function(x, split, fixed = FALSE, perl = FALSE, select.cols = "max") {
 
 	# convert factors to character
-	if(is.factor(x)) {x <- as.character(labels(x))}
+	if(is.factor(x)) {x <- as.character(labels(x));}
 
 	x <- strsplit(x, split = split, fixed = fixed, perl = perl);
 
@@ -22,20 +22,20 @@ strsplit.to.matrix <- function(x, split, fixed = FALSE, perl = FALSE, select.col
 		max.length <- max(n.splits);
 		min.length <- min(n.splits);
 		if (select.cols[1] == "max") {
-			x <- lapply(x, function(x, n) {c(x, rep(NA, n - length(x)))}, max.length)
+			x <- lapply(x, function(x, n) {c(x, rep(NA, n - length(x)))}, max.length);
 			}
 		else if (select.cols[1] == "min") {
-			x <- lapply(x, function(x, n) {c(x[1:n])}, min.length)
+			x <- lapply(x, function(x, n) {c(x[1:n])}, min.length);
 			}
 		else if (all(is.numeric(select.cols))) {
-			x <- lapply(x, mixed.index, select.cols)
+			x <- lapply(x, mixed.index, select.cols);
 			}
 		else {
 			stop("select.cols value not recognized");
 			}
 		}
 	else if (all(is.numeric(select.cols))) {
-		x <- lapply(x, mixed.index, select.cols)
+		x <- lapply(x, mixed.index, select.cols);
 		} 
 
 	x <- as.data.frame(do.call("rbind", x), stringsAsFactors=FALSE);
