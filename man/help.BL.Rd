@@ -8,7 +8,6 @@
     \item{packages}{The packages to search through}
     \item{search.code}{Whether the code should be searched}
 }
-\details{}
 \value{documentation and code search as a two item list of matrices. }
 \author{Daryl Waggott}
 \examples{

@@ -11,7 +11,6 @@ generate.filename(project.stem, file.core, extension, file.date = Sys.Date());
     \item{extension}{What type of file is this}
     \item{file.date}{What is the current date (defaults to today; FALSE turns off the date-stamp)}
 }
-\details{}
 \value{No return value}
 \author{Paul C. Boutros}
 \examples{

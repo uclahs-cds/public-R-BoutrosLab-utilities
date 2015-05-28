@@ -29,7 +29,4 @@ trim.trailing.whitespace(x);
 Author: Paul C. Boutros <Paul.Boutros@utoronto.ca>
 Maintainer: Paul C. Boutros <Paul.Boutros@utoronto.ca>
 }
-\references{}
 \keyword{ package }
-\seealso{}
-\examples{}

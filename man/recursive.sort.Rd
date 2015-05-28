@@ -17,7 +17,6 @@ recursive.sort(x, by="col",na.last=TRUE, decreasing=FALSE, skip=NULL, reverse = 
     \item{alternate.dim.order.func}{a function to be used for sort i.e. mean, sum}
     \item{alternate.dim.order.func.rev}{sort the alternate dimension in descending order using the results of the specified function}
 }
-\details{}
 \value{sorted data.frame}
 \author{Daryl Waggott}
 \examples{

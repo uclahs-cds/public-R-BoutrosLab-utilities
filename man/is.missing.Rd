@@ -15,12 +15,8 @@ is.missing(x, rows = TRUE, missing.value = NA, threshold = NULL);
     \item{missing.value}{What value is considered missing.  Can be a vector of values that include NA.}
     \item{threshold}{A value between 0 and 1 which determines the missing threshold. }
 }
-\details{
-
-}
 \value{
 Defaults to returning a percent of row wise missing.  If a threshold is given between 0-1 then the output is logical.
 }
 \author{Daryl Waggott}
-\examples{}
 \keyword{missing}

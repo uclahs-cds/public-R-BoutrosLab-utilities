@@ -13,8 +13,5 @@ ragged.rbind(...)
     \item{\dots}{
 }
 }
-\details{}
-\value{}
 \author{Daryl Waggott}
-\examples{}
 \keyword{rbind}

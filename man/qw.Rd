@@ -9,7 +9,6 @@ qw(x, split = NULL);
     \item{x}{String to split}
     \item{split}{Delimeter, tries to guess}
 }
-\details{}
 \value{Vector of strings}
 \author{Nicholas J. Harding}
 \examples{

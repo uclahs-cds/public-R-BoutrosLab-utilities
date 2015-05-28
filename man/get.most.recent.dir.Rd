@@ -9,7 +9,6 @@ get.most.recent.dir(dir.path, max.days=100);
     \item{dir.path}{Name of the dir/file. Should contain the string 'DATE'}
     \item{max.days}{Maximum days back to test.}
 }
-\details{}
 \value{A valid filepath}
 \author{Nicholas Harding}
 \examples{

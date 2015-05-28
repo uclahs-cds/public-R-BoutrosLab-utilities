@@ -9,7 +9,6 @@ string.capitalize(input.string, all.words);
     \item{input.string}{A character string to be capitalize}
     \item{all.words}{A boolean toggle indicating whether all the words should be capitalized (TRUE) or just the first one (FALSE)}
 }
-\details{}
 \value{A capitalized character string}
 \author{Michal Grzadkowski}
 \examples{

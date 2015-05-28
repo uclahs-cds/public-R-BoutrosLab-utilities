@@ -7,7 +7,6 @@
     \item{obj}{A dataframe}
     \item{type}{Type to convert to, 'factor', 'numeric' or 'character'}
 }
-\details{}
 \value{The dataframe but coerced to specified type.}
 \author{Nicholas Harding}
 

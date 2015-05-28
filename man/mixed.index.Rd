@@ -9,8 +9,5 @@ mixed.index(x, index)
     \item{x}{A vector}
     \item{index}{A index where values prefixed by a "-" are counted from reverse.}
 }
-\details{}
-\value{}
 \author{Daryl Waggott}
-\examples{}
 \keyword{index}

@@ -8,7 +8,6 @@ less(x);
 \arguments{
     \item{x}{Name of the data object}
 }
-\details{}
 \value{No return value}
 \author{Richard de Borja}
 \examples{

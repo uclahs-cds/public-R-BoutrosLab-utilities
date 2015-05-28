@@ -11,8 +11,6 @@ read.config.file(config.file, convert.path, old.path, new.path);
     \item{old.path}{Pattern.  The default is "I:" if you are on a unix machine and "/mnt/isilon/private" if you are on windows.}
     \item{new.path}{Replacement. The default is "/mnt/isilon/private" if you are on a unix machine and "I:" if you are on windows.}	
 }
-\details{}
 \value{Returns a list of the parameters}
 \author{Mehrdad Shamsi}
-\examples{}
 \keyword{utilities}

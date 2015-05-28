@@ -8,7 +8,6 @@ GarbageCollect(x);
 \arguments{
     \item{x}{Number of iterations of gc() to run, defaults to nine}
 }
-\details{}
 \value{No return value}
 \author{Paul C. Boutros}
 \examples{GarbageCollect(3);}
