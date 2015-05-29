@@ -3,7 +3,8 @@
 \title{Sort a data.frame by all rows or columns}
 \description{This function sort a data.frame by all rows or columns}
 \usage{
-recursive.sort(x, by="col",na.last=TRUE, decreasing=FALSE, skip=NULL, reverse = FALSE, group = NULL, alternate.dim.order.func = NULL, alternate.dim.order.func.rev = FALSE)
+recursive.sort(x, by="col",na.last=TRUE, decreasing=FALSE, skip=NULL, reverse = FALSE,
+    group = NULL, alternate.dim.order.func = NULL, alternate.dim.order.func.rev = FALSE)
 }
 
 \arguments{
