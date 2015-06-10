@@ -6,6 +6,6 @@ Date: 2015-05-08
 Author: Dr. Paul C. Boutros
 Maintainer: Paul Boutros <Paul.Boutros@oicr.on.ca>
 Depends: R (>= 2.15.3)
-Description: Contains utility functions
+Description: Contains utility functions.
 License: GPL-2
 LazyLoad: yes
