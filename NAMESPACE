@@ -25,4 +25,6 @@ export(
 	"recursive.sort",
 	"recode.vector"
 	);
-
+importFrom("utils", "capture.output", "head", "help.search",
+             "installed.packages", "object.size", "page", "read.table",
+             "sessionInfo")
