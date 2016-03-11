@@ -1,0 +1,6 @@
+BoutrosLab.utilities 1.9.7 2016-03-11 (Christopher Lalansingh)
+---------------------------------------------------------------------------------------------------
+NEW FEATURE
+* Added confusion.matrix() which generates a standard confusion matrix for a binary classifier in
+	the form of a dataframe with addition attributes for common metrics (e.g. sensitivity,
+	specificity, FDR, F1 score, accuracy, etc)

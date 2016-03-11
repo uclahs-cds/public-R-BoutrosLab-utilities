@@ -6,7 +6,7 @@
  and a vector of predictions. The returned data frame has attributes for common metrics
  used when evaluating binary classifiers.}
 \usage{
-qw(x, split = NULL);
+confusion.matrix(response = response, truth = truth, positive.value = 1);
 }
 \arguments{
     \item{prediction}{Vector of predicted values}
