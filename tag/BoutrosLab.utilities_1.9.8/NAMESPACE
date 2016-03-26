@@ -1,0 +1,32 @@
+# exportPattern("^[[:alpha:]]+")
+
+export(
+	"GarbageCollect",
+	"ls.objects",
+	"generate.filename",
+	"read.config.file",
+	"read.tabdelimited",
+	"trim.leading.whitespace",
+	"trim.trailing.whitespace",
+	"trim.leading.trailing.whitespace",
+	"sample.subsets",
+	"save.session.profile",
+	"qw",
+	"less",
+	"help.BL",
+	"is.missing",
+	"strsplit.to.matrix",
+	"mixed.index",
+	"is.duplicated",
+	"convert.magic",
+	"string.capitalize",
+	"get.most.recent.dir",
+	"find.package.file",
+	"recursive.sort",
+	"recode.vector",
+	"confusion.matrix",
+	"calculate.mcc"
+	);
+importFrom("utils", "capture.output", "head", "help.search",
+             "installed.packages", "object.size", "page", "read.table",
+             "sessionInfo")
