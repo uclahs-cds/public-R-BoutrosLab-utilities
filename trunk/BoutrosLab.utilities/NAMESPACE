@@ -24,7 +24,8 @@ export(
 	"find.package.file",
 	"recursive.sort",
 	"recode.vector",
-	"confusion.matrix"
+	"confusion.matrix",
+	"calculate.mcc"
 	);
 importFrom("utils", "capture.output", "head", "help.search",
              "installed.packages", "object.size", "page", "read.table",

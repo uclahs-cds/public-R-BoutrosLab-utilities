@@ -1,3 +1,10 @@
+BoutrosLab.utilities 1.9.8 2016-03-26 (Ren Sun)
+---------------------------------------------------------------------------------------------------
+NEW FEATURE
+* Added calculate.mcc() which returns Matthew's Correlation Coefficient (MCC) for assessing model
+	performance in binary classification when classes are imbalanced. Inputs are a vector of
+	predicted classes and a vector of true classes
+
 BoutrosLab.utilities 1.9.7 2016-03-11 (Christopher Lalansingh)
 ---------------------------------------------------------------------------------------------------
 NEW FEATURE
