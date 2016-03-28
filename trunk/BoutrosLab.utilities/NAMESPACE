@@ -23,9 +23,7 @@ export(
 	"get.most.recent.dir",
 	"find.package.file",
 	"recursive.sort",
-	"recode.vector",
-	"confusion.matrix",
-	"calculate.mcc"
+	"recode.vector"
 	);
 importFrom("utils", "capture.output", "head", "help.search",
              "installed.packages", "object.size", "page", "read.table",
