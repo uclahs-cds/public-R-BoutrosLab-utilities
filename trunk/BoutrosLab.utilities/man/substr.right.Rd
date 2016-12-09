@@ -13,7 +13,7 @@ substr.right(input.string, length);
 \author{Nathaniel Schmitz}
 \examples{
 # right substring with length 3 of 'Boutros Lab' is 'Lab'
-substr.right('Boutros Lab.', 3);
+substr.right('Boutros Lab', 3);
 }
 \keyword{utilities}
 
