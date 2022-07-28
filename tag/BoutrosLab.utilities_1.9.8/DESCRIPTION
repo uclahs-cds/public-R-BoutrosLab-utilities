@@ -1,0 +1,11 @@
+Package: BoutrosLab.utilities
+Version: 1.9.8
+Type: Package
+Title: A Set of Utility Functions
+Date: 2016-03-26
+Author: Dr. Paul C. Boutros
+Maintainer: Paul Boutros <Paul.Boutros@oicr.on.ca>
+Depends: R (>= 2.15.3)
+Description: Contains utility functions.
+License: GPL-2
+LazyLoad: yes
