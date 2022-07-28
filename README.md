@@ -1,20 +1,16 @@
 # Project/Repo Title
 
-Template Repository for the Boutros Lab general project repos. Describe a simple overview of use/purpose here.
+Boutros Lab R utilities
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+Boutros Lab R utilities
 
 ## License
 
-Author: Name1(username1@mednet.ucla.edu), Name2(username2@mednet.ucla.edu)
+Author: Dr. Paul C. Boutros
 
-[This project] is licensed under the GNU General Public License version 2. See the file LICENSE.md for the terms of the GNU GPL license.
-
-<one line to give the project/program's name and a brief idea of what it does.>
-
-Copyright (C) 2021 University of California Los Angeles ("Boutros Lab") All rights reserved.
+Copyright (C) 2022 University of California Los Angeles ("Boutros Lab") All rights reserved.
 
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
 
