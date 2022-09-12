@@ -1,6 +1,6 @@
-# Project/Repo Title
+# BoutrosLab R Utilities
 
-Boutros Lab R utilities
+Assorted Boutros Lab R utilities.
 
 ## Description
 
