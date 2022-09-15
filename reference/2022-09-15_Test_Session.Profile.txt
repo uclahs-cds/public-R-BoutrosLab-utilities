@@ -1,0 +1,42 @@
+### Memory #########################################################################################
+            used  (Mb) gc trigger   (Mb) limit (Mb)  max used  (Mb)
+Ncells    863838  46.2    1357444   72.5         NA   1357444  72.5
+Vcells 101599900 775.2  148895795 1136.0      16384 101610782 775.3
+
+### Time ###########################################################################################
+   user  system elapsed 
+ 10.086   3.057  19.998 
+
+### Full list of objects ###########################################################################
+[1] "Nothing to list"
+
+### Session Info ###################################################################################
+R version 4.2.1 (2022-06-23)
+Platform: x86_64-apple-darwin17.0 (64-bit)
+Running under: macOS Catalina 10.15.7
+
+Matrix products: default
+BLAS:   /Library/Frameworks/R.framework/Versions/4.2/Resources/lib/libRblas.0.dylib
+LAPACK: /Library/Frameworks/R.framework/Versions/4.2/Resources/lib/libRlapack.dylib
+
+locale:
+[1] C/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] BoutrosLab.utilities_1.9.10
+
+loaded via a namespace (and not attached):
+ [1] pillar_1.8.1      bslib_0.4.0       compiler_4.2.1    jquerylib_0.1.4  
+ [5] tools_4.2.1       digest_0.6.29     downlit_0.4.2     jsonlite_1.8.0   
+ [9] memoise_2.0.1     evaluate_0.16     lifecycle_1.0.1   tibble_3.1.8     
+[13] pkgconfig_2.0.3   rlang_1.0.5       cli_3.3.0         rstudioapi_0.14  
+[17] curl_4.3.2        yaml_2.3.5        pkgdown_2.0.6     xfun_0.32        
+[21] fastmap_1.1.0     withr_2.5.0       httr_1.4.4        knitr_1.40       
+[25] xml2_1.3.3        desc_1.4.1        fs_1.5.2          vctrs_0.4.1      
+[29] sass_0.4.2        systemfonts_1.0.4 rprojroot_2.0.3   glue_1.6.2       
+[33] R6_2.5.1          textshaping_0.3.6 fansi_1.0.3       rmarkdown_2.16   
+[37] purrr_0.3.4       magrittr_2.0.3    whisker_0.4       htmltools_0.5.3  
+[41] ragg_1.2.2        utf8_1.2.2        cachem_1.0.6     
