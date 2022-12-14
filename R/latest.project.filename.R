@@ -1,0 +1,73 @@
+#' Inverse of `generate.filename`
+#'
+#' @param project.stem Name of the project
+#' @param file.core Main part of the filename
+#' @param extension What type of file is this
+#' @param file.date A specific date of the file be located. Leave NULL to find latest file.
+#'
+#' @return
+#' @export
+#'
+#' @examples
+#' file.create(generate.filename('TestProject', 'myfile', 'txt', file.date = '2022-12-12'))
+#' file.create(generate.filename('TestProject', 'myfile', 'txt'))
+#' file.create(generate.filename('TestProject', 'myfile', 'txt', file.date = FALSE))
+#' latest.project.filename('TestProject', 'myfile', 'txt')
+latest.project.filename <- function(
+	project.stem,
+	file.core,
+	extension,
+	folder.path = '.',
+	file.date = NULL
+	) {
+	file.basename <- generate.filename(
+		project.stem,
+		file.core,
+		extension,
+		file.date = FALSE
+		);
+	possible.files <- list.files(
+		path = folder.path,
+		pattern = escape.regex(file.basename),
+		full.names = TRUE,
+		ignore.case = FALSE,
+		);
+	# Check if filename exists in the folder without a date
+	basename.possible.files <- basename(possible.files);
+	no.date.file <- which(file.basename == basename.possible.files);
+	if (length(no.date.file) > 0) {
+		if (length(basename.possible.files) == 1) {
+			return(basename.possible.files);
+			}
+		warning('Found file without date and files with dates. Returning latest file with date.');
+		possible.files <- possible.files[-no.date.file];
+		basename.possible.files <- basename.possible.files[-no.date.file];
+
+		ordered.possible.files <- c(
+			possible.files[order(basename.possible.files, decreasing = TRUE)],
+			possible.files[no.date.file]
+			);
+		} else {
+			ordered.possible.files <- possible.files[order(basename.possible.files, decreasing = TRUE)];
+		}
+	if (length(ordered.possible.files) == 0) {
+		stop('No files found matching: ', file.basename);
+		}
+	return(ordered.possible.files[1]);
+	}
+
+
+#' Escapes regular expression metacharacters in a string with by prepending `\Q` and appending `\E`
+#'
+#' See the documentation on `base::regex`
+#'
+#' @param x String with possible regular expression metacharacters
+#'
+#' @return String `\Qx\E`
+#' @export
+#'
+#' @examples
+#'
+escape.regex <- function(x) {
+	paste0('\\Q', x, '\\E')
+	}
