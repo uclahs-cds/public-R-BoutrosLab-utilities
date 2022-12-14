@@ -1,4 +1,4 @@
-test_that("latest.project.filename works", {
+test_that('latest.project.filename works', {
 	output.dir <- tempdir()
 	file.create(
 		file.path(

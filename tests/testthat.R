@@ -9,4 +9,4 @@
 library(testthat)
 library(BoutrosLab.utilities)
 
-test_check("BoutrosLab.utilities")
+test_check('BoutrosLab.utilities')
