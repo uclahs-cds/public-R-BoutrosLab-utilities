@@ -11,14 +11,14 @@
 
 #' Generate a filename in the lab standard
 #'
-#' This function creates a filename according to the date_project_core.extension lab standard
+#' This function creates a filename according to the date_project_core.extension lab standard. Matches the regular expression `r valid.filename.regex`
 #'
 #' @param project.stem Name of the project
 #' @param file.core Main part of the filename
 #' @param extension File extension
 #' @param file.date Optional date of filename. (defaults to today; FALSE or NULL turns off the date-stamp)
 #'
-#' @return
+#' @return Boutros lab standard filename
 #' @export
 #'
 #' @examples
@@ -57,3 +57,5 @@ generate.filename <- function(project.stem, file.core, extension, file.date = Sy
 
 	return(file.name);
 	}
+
+valid.filename.regex <- '([0-9]{4}-[0-9]{2}-[0-9]{2}_)?[[:alnum:]-]+_[[:alnum:]-]+\\.[[:alnum:]-]+'

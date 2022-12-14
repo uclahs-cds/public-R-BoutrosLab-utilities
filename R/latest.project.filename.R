@@ -5,13 +5,13 @@
 #' @param extension What type of file is this
 #' @param file.date A specific date of the file be located. Leave NULL to find latest file.
 #'
-#' @return
+#' @return The full file path to the latest file with the given name
 #' @export
 #'
 #' @examples
 #' file.create(generate.filename('TestProject', 'myfile', 'txt', file.date = '2022-12-12'))
-#' file.create(generate.filename('TestProject', 'myfile', 'txt'))
-#' file.create(generate.filename('TestProject', 'myfile', 'txt', file.date = FALSE))
+#' file.create(generate.filename('TestProject', 'myfile', 'txt', file.date = '2022-12-11))
+#' file.create(generate.filename('TestProject', 'myfile', 'txt', file.date = NULL))
 #' latest.project.filename('TestProject', 'myfile', 'txt')
 latest.project.filename <- function(
 	project.stem,
@@ -24,7 +24,7 @@ latest.project.filename <- function(
 		project.stem,
 		file.core,
 		extension,
-		file.date = FALSE
+		file.date = file.date
 		);
 	possible.files <- list.files(
 		path = folder.path,
@@ -64,10 +64,10 @@ latest.project.filename <- function(
 #' @param x String with possible regular expression metacharacters
 #'
 #' @return String `\Qx\E`
-#' @export
 #'
 #' @examples
-#'
+#' grepl(escape.regex('[abc]'), '[abc]')
+#' grepl(escape.regex('.*'), '.*')
 escape.regex <- function(x) {
 	paste0('\\Q', x, '\\E')
 	}

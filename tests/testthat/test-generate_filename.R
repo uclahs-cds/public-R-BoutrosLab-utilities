@@ -1,5 +1,4 @@
 test_that('generate.filename works', {
-	validate.regex <- '([0-9]{4}-[0-9]{2}-[0-9]{2}_)?[[:alnum:]-]+_[[:alnum:]-]+\\.[[:alnum:]-]+';
 	# Invalid dates
 	expect_error(generate.filename('TestProject', 'myfile', 'txt', file.date = '2022-13-12'));
 	expect_error(generate.filename('TestProject', 'myfile', 'txt', file.date = '2022-12-32'));
@@ -14,9 +13,9 @@ test_that('generate.filename works', {
 
 	# Validate against global regular expression
 	expect_true(
-		grepl(validate.regex, generate.filename('TestProject', 'myfile', 'txt'))
+		grepl(valid.filename.regex, generate.filename('TestProject', 'myfile', 'txt'))
 		);
 	expect_true(
-		grepl(validate.regex, generate.filename('TestProject', 'myfile', 'txt', file.date = NULL))
+		grepl(valid.filename.regex, generate.filename('TestProject', 'myfile', 'txt', file.date = NULL))
 		);
 })
