@@ -3,6 +3,7 @@
 #' @param project.stem Name of the project
 #' @param file.core Main part of the filename
 #' @param extension What type of file is this
+#' @param folder.path The folder path to search for files. Defaults to '.' (current directory)
 #' @param file.date A specific date of the file be located. Leave NULL to find latest file.
 #'
 #' @return The full file path to the latest file with the given name
@@ -57,13 +58,13 @@ latest.project.filename <- function(
 	}
 
 
-#' Escapes regular expression metacharacters in a string with by prepending `\Q` and appending `\E`
+#' Escapes regular expression metacharacters in a string with by prepending `\\Q` and appending `\\E`
 #'
 #' See the documentation on `base::regex`
 #'
 #' @param x String with possible regular expression metacharacters
 #'
-#' @return String `\Qx\E`
+#' @return String `\\Qx\\E`
 #'
 #' @examples
 #' grepl(escape.regex('[abc]'), '[abc]')

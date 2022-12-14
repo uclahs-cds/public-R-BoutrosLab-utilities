@@ -18,4 +18,7 @@ test_that('generate.filename works', {
 	expect_true(
 		grepl(valid.filename.regex, generate.filename('TestProject', 'myfile', 'txt', file.date = NULL))
 		);
+	expect_true(
+		grepl(valid.filename.regex, generate.filename('TestProject', 'my.file', 'txt', file.date = NULL))
+		);
 })

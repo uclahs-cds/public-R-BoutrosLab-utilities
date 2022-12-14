@@ -19,6 +19,8 @@ latest.project.filename(
 
 \item{extension}{What type of file is this}
 
+\item{folder.path}{The folder path to search for files. Defaults to '.' (current directory)}
+
 \item{file.date}{A specific date of the file be located. Leave NULL to find latest file.}
 }
 \value{

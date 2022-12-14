@@ -32,13 +32,13 @@
 #' generate.filename('NSCLC', 'StatisticalAnalysis', 'txt', FALSE);
 generate.filename <- function(project.stem, file.core, extension, file.date = Sys.Date()) {
 	# Validate components of the filename
-	validate.fileparts <- grepl('^[[:alnum:]-]+$', c(project.stem, file.core, extension));
+	validate.fileparts <- grepl('^[[:alnum:].-]+$', c(project.stem, file.core, extension));
 	if (any(!validate.fileparts)) {
 		invalid.values <- c(project.stem, file.core, extension)[!validate.fileparts]
 		stop(
 			'Invalid characters found in: ',
 			paste0(invalid.values, collapse = ', '),
-			'\nNeeds to be alphanumeric [a-zA-Z0-9] or dash (-)'
+			'\nNeeds to be alphanumeric [a-zA-Z0-9] , dash (-), or dot (.)'
 			);
 		}
 
@@ -58,4 +58,4 @@ generate.filename <- function(project.stem, file.core, extension, file.date = Sy
 	return(file.name);
 	}
 
-valid.filename.regex <- '([0-9]{4}-[0-9]{2}-[0-9]{2}_)?[[:alnum:]-]+_[[:alnum:]-]+\\.[[:alnum:]-]+'
+valid.filename.regex <- '([0-9]{4}-[0-9]{2}-[0-9]{2}_)?[[:alnum:].-]+_[[:alnum:].-]+\\.[[:alnum:].-]+'
