@@ -4,6 +4,7 @@ export(
 	"GarbageCollect",
 	"ls.objects",
 	"generate.filename",
+	"latest.project.filename",
 	"read.config.file",
 	"read.tabdelimited",
 	"trim.leading.whitespace",
@@ -25,7 +26,8 @@ export(
 	"recursive.sort",
 	"recode.vector",
 	"evaluate.and.save",
-	"substr.right"
+	"substr.right",
+	"escape.regex"
 	);
 importFrom("utils", "capture.output", "head", "help.search",
              "installed.packages", "object.size", "page", "read.table",
