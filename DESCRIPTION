@@ -9,3 +9,6 @@ Depends: R (>= 2.15.3)
 Description: Contains utility functions.
 License: GPL-2
 LazyLoad: yes
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3

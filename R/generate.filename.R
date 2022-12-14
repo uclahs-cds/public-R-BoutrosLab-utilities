@@ -31,6 +31,17 @@
 # generate a filename without a date
 #' generate.filename('NSCLC', 'StatisticalAnalysis', 'txt', FALSE);
 generate.filename <- function(project.stem, file.core, extension, file.date = Sys.Date()) {
+	# Validate components of the filename
+	validate.fileparts <- grepl('^[[:alnum:]-]+$', c(project.stem, file.core, extension));
+	if (any(!validate.fileparts)) {
+		invalid.values <- c(project.stem, file.core, extension)[!validate.fileparts]
+		stop(
+			'Invalid characters found in: ',
+			paste0(invalid.values, collapse = ', '),
+			'\nNeeds to be alphanumeric [a-zA-Z0-9] or dash (-)'
+			);
+		}
+
 	if(is.null(file.date) || (is.logical(file.date) && ! file.date)) {
 		date.prefix <- '';
 		} else {
