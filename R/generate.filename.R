@@ -9,18 +9,40 @@
 # If publications result from research using this SOFTWARE, we ask that the Ontario Institute for Cancer Research be acknowledged and/or
 # credit be given to OICR scientists, as scientifically appropriate.
 
+#' Generate a filename in the lab standard
+#'
+#' This function creates a filename according to the date_project_core.extension lab standard
+#'
+#' @param project.stem Name of the project
+#' @param file.core Main part of the filename
+#' @param extension File extension
+#' @param file.date Optional date of filename. (defaults to today; FALSE or NULL turns off the date-stamp)
+#'
+#' @return
+#' @export
+#'
+#' @examples
+#' # generate a filename to screen
+#' generate.filename('NSCLC', 'StatisticalAnalysis', 'txt');
+#'
+# generate a filename in context of another function
+#' save.session.profile( generate.filename('Prostate', 'StatisticalAnalysisSessionProfile', 'txt') );
+#'
+# generate a filename without a date
+#' generate.filename('NSCLC', 'StatisticalAnalysis', 'txt', FALSE);
 generate.filename <- function(project.stem, file.core, extension, file.date = Sys.Date()) {
-
-	# build up the filename piece-wise
-	file.name <- paste(project.stem, sep = '_');
-	file.name <- paste(file.name, file.core, sep = '_');
-	file.name <- paste(file.name, extension, sep = '.');
-
-	# now add the date, if requested
-	if (file.date != FALSE) {
-		file.name <- paste(file.date, file.name, sep = '_');
+	if(is.null(file.date) || (is.logical(file.date) && ! file.date)) {
+		date.prefix <- '';
+		} else {
+		# Check that given date conforms to YYYY-MM-DD
+		valid.file.date <- try(as.Date(as.character(file.date), format = "%Y-%m-%d"), silent = TRUE)
+		if(is.na(valid.file.date) || (! "Date" %in% class(valid.file.date))) {
+			stop(file.date, ' is not is yyyy-mm-dd format or valid date.');
 		}
-	
-	return(file.name);
+		date.prefix <- paste0(valid.file.date, '_')
+		}
 
+	file.name <- sprintf('%s%s_%s.%s', date.prefix, project.stem, file.core, extension);
+
+	return(file.name);
 	}
