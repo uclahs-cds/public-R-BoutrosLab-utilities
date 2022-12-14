@@ -21,12 +21,15 @@ latest.project.filename(
 
 \item{file.date}{A specific date of the file be located. Leave NULL to find latest file.}
 }
+\value{
+The full file path to the latest file with the given name
+}
 \description{
 Inverse of `generate.filename`
 }
 \examples{
 file.create(generate.filename('TestProject', 'myfile', 'txt', file.date = '2022-12-12'))
-file.create(generate.filename('TestProject', 'myfile', 'txt'))
-file.create(generate.filename('TestProject', 'myfile', 'txt', file.date = FALSE))
+file.create(generate.filename('TestProject', 'myfile', 'txt', file.date = '2022-12-11'))
+file.create(generate.filename('TestProject', 'myfile', 'txt', file.date = NULL))
 latest.project.filename('TestProject', 'myfile', 'txt')
 }
